@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercadorias</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <h1>Mercadorias</h1>
+    
+    <div id="mercadorias">
+        <div>
+            <span>Margarina</span>
+            <button onclick="incrementar('Margarina')">+</button>
+            <button onclick="decrementar('Margarina')">-</button>
+            <span id="quantidadeMargarina">0</span>
+        </div>
+        <div>
+            <span>Melão</span>
+            <button onclick="incrementar('Melão')">+</button>
+            <button onclick="decrementar('Melão')">-</button>
+            <span id="quantidadeMelão">0</span>
+        </div>
+        <div>
+            <span>Alface</span>
+            <button onclick="incrementar('Alface')">+</button>
+            <button onclick="decrementar('Alface')">-</button>
+            <span id="quantidadeAlface">0</span>
+        </div>
+        <div>
+            <span>Manteiga</span>
+            <button onclick="incrementar('Manteiga')">+</button>
+            <button onclick="decrementar('Manteiga')">-</button>
+            <span id="quantidadeManteiga">0</span>
+        </div>
+        <div>
+            <span>Hamburguer</span>
+            <button onclick="incrementar('Hamburguer')">+</button>
+            <button onclick="decrementar('Hamburguer')">-</button>
+            <span id="quantidadeHamburguer">0</span>
+        </div>
+        <div>
+            <span>Açaí</span>
+            <button onclick="incrementar('Açaí')">+</button>
+            <button onclick="decrementar('Açaí')">-</button>
+            <span id="quantidadeAçaí">0</span>
+        </div>
+        <div>
+            <span>Tomate</span>
+            <button onclick="incrementar('Tomate')">+</button>
+            <button onclick="decrementar('Tomate')">-</button>
+            <span id="quantidadeTomate">0</span>
+        </div>
+        <div>
+            <span>Cebola</span>
+            <button onclick="incrementar('Cebola')">+</button>
+            <button onclick="decrementar('Cebola')">-</button>
+            <span id="quantidadeCebola">0</span>
+        </div>
+        <div>
+            <span>Copo 200 ml</span>
+            <button onclick="incrementar('Copo200ml')">+</button>
+            <button onclick="decrementar('Copo200ml')">-</button>
+            <span id="quantidadeCopo200ml">0</span>
+        </div>
+        <div>
+            <span>Copo 300 ml</span>
+            <button onclick="incrementar('Copo300ml')">+</button>
+            <button onclick="decrementar('Copo300ml')">-</button>
+            <span id="quantidadeCopo300ml">0</span>
+        </div>
+    </div>
+
+    <button onclick="enviarEmail()">Enviar Email</button>
+
+   <script src="script.js"></script>
+    
+</body>
+</html>
