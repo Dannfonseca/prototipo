@@ -23,18 +23,28 @@ function decrementar(mercadoria) {
     }
 }
 
-function enviarEmail() {
-    let emailBody = "";
+function enviarWhatsApp() {
+    let mensagem = gerarMensagem();
+    let numeroWhatsApp = "21989324855"; // Número de WhatsApp desejado
+
+    // Codificar a mensagem para ser usada no URL
+    mensagem = encodeURIComponent(mensagem);
+
+    // Construir o link do WhatsApp com o número e a mensagem
+    const linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensagem}`;
+
+    // Abrir o link no WhatsApp
+    window.open(linkWhatsApp, "_blank");
+}
+
+function gerarMensagem() {
+    let mensagem = "";
 
     for (const mercadoria in mercadorias) {
         if (mercadorias[mercadoria] > 0) {
-            emailBody += `${mercadoria} ${mercadorias[mercadoria]}, `;
+            mensagem += `${mercadoria} ${mercadorias[mercadoria]}\n`;
         }
     }
 
-    emailBody = emailBody.slice(0, -2);
-
-    const emailLink = `mailto:russelmytho@gmail.com?subject=Lista de Mercadorias&body=${emailBody}`;
-
-    window.location.href = emailLink;
+    return mensagem;
 }
