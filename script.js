@@ -25,7 +25,7 @@ function decrementar(mercadoria) {
 
 function enviarWhatsApp() {
     let mensagem = gerarMensagem();
-    let numeroWhatsApp = "21989324855"; // Número de WhatsApp desejado
+    let numeroWhatsApp = "5521989324855"; // Número de WhatsApp desejado
 
     // Codificar a mensagem para ser usada no URL
     mensagem = encodeURIComponent(mensagem);
