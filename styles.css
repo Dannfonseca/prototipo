@@ -28,6 +28,8 @@ body {
     color: #f2ff00bd;
     background-color: #1b1a1a;
     font-weight: bold;
+    max-height: 500px; /* Defina a altura máxima desejada */
+    overflow-y: auto; /* Adicione uma barra de rolagem vertical quando necessário */
   }
   
   /* Estilos para os itens de mercadorias */
