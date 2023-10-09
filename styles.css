@@ -25,7 +25,6 @@ h1 {
 header {
   background-color: #333; /* Cor de fundo do cabeçalho */
   padding: 10px 0; /* Espaçamento interno do cabeçalho */
-  border-radius: 7px;
 }
 
 .content {
@@ -42,13 +41,16 @@ header {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores */
 }
 
 .list-menu li {
-  margin-right: 20px; /* Espaçamento entre os itens do menu */
   margin-bottom: 10px; /* Espaçamento entre as linhas de itens */
-  flex: 1; /* Faz com que cada item ocupe 25% do espaço em telas menores (4 itens por linha) */
+  flex-basis: calc(25% - 20px); /* Faz com que cada item ocupe 25% do espaço em telas maiores (4 itens por linha) */
+  max-width: calc(25% - 20px); /* Largura máxima de 25% para garantir 4 itens por linha */
+  box-sizing: border-box; /* Garante que a largura inclua margens e padding */
+  position: relative; /* Permite adicionar bordas */
+  padding: 10px; /* Espaçamento interno dos itens */
 }
 
 .list-menu a {
@@ -60,6 +62,17 @@ header {
 
 .list-menu a:hover {
   color: #f2ff00bd; /* Cor do texto ao passar o mouse */
+}
+
+/* Adicionar bordas entre os itens */
+.list-menu li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10px; /* Espaçamento da borda à direita */
+  bottom: 0;
+  width: 2px; /* Largura da borda */
+  background-color: #fff; /* Cor da borda */
 }
 
 /* Estilos para o ícone de menu mobile */
@@ -77,6 +90,7 @@ header {
 
   .list-menu li {
       margin: 0; /* Remover margens entre os itens */
+      max-width: 100%; /* Largura máxima de 100% para que ocupem a largura total */
   }
 
   .menu-toggle {
@@ -94,6 +108,7 @@ header {
       transform: rotate(45deg) translate(-5px, -6px);
   }
 }
+
 
 
 
