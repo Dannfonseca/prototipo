@@ -115,7 +115,7 @@ header {
   color: #f2ff00bd;
   background-color: #1b1a1a;
   font-weight: bold;
-  max-height: 500px;
+  max-height: 420px;
   /* Defina a altura máxima desejada */
   margin-top: 50px;
   overflow-y: auto;
