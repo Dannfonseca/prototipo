@@ -1,4 +1,8 @@
 /* Estilos gerais para a página */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -18,6 +22,88 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
+/* Estilos para o menu */
+header {
+  background-color: #333; /* Cor de fundo do cabeçalho */
+  padding: 10px 0; /* Espaçamento interno do cabeçalho */
+  border-radius: 7px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+.list-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.list-menu li {
+  margin-right: 20px; /* Espaçamento entre os itens do menu */
+}
+
+.list-menu a {
+  text-decoration: none;
+  color: #ecd1d1; /* Cor do texto dos itens do menu */
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.list-menu a:hover {
+  color: #f2ff00bd; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilos para o ícone de menu mobile */
+.menu-toggle {
+  display: none; /* Ocultar o ícone em telas maiores */
+  cursor: pointer;
+}
+
+.menu-toggle div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff; /* Cor do ícone */
+  margin: 4px 0;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Estilos para tornar o ícone visível em telas menores (móveis) */
+@media (max-width: 768px) {
+  .list-menu {
+      display: none; /* Ocultar o menu em telas menores */
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #333;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .list-menu.show {
+      display: flex; /* Mostrar o menu quando o ícone é clicado */
+  }
+
+  .menu-toggle {
+      display: block; /* Mostrar o ícone em telas menores */
+  }
+}
+
+
+
+
+
+  
   
   #mercadorias {
     display: flex;
@@ -81,7 +167,7 @@ body {
   #mercadorias .subtitulo {
     text-align: center;
     background-color: #1b1a1a; /* Cor de fundo igual à cor da div principal */
-    color: #ff0000; /* Cor do texto em vermelho */
+    color: #d11818; /* Cor do texto em vermelho */
     padding: 10px;
     border-radius: 0;
     border: none;
