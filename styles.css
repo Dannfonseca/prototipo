@@ -10,10 +10,13 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh; /* Centraliza verticalmente na tela */
+    overflow-y: auto;
   }
   
   h1 {
     color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
   #mercadorias {
@@ -29,7 +32,8 @@ body {
     background-color: #1b1a1a;
     font-weight: bold;
     max-height: 500px; /* Defina a altura máxima desejada */
-    overflow-y: auto; /* Adicione uma barra de rolagem vertical quando necessário */
+   margin-top: 50px;
+   overflow-y: auto;
   }
   
   /* Estilos para os itens de mercadorias */
@@ -72,59 +76,13 @@ body {
   }
   
 
-  .navbar {
-    background-color: #ffffff; /* Amarelo claro */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+
+
+  #mercadorias .subtitulo {
+    text-align: center;
+    background-color: #1b1a1a; /* Cor de fundo igual à cor da div principal */
+    color: #ff0000; /* Cor do texto em vermelho */
+    padding: 10px;
+    border-radius: 0;
+    border: none;
 }
-.logo, p {
-  color: #326b91;
-}
-
-.logo {
-  display: flex;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 20px;
-  align-items: flex-start;
-  padding: 2px;
-  
-}
-
-.logo img {
-    width: 60px; /* Tamanho do logotipo */
-    border-radius: 1px;
-  margin-right: 15px;
-}
-
-.menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.menu li {
-    margin-right: 20px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #ff5733; /* Vermelho claro */
-    font-weight: bold;
-    font-size: 16px;
-    transition: color 0.3s;
-}
-
-.menu a:hover {
-    color: #613f37; /* Vermelho mais escuro ao passar o mouse */
-}
-
-
-
