@@ -25,6 +25,8 @@ h1 {
 header {
   background-color: #333; /* Cor de fundo do cabeçalho */
   padding: 10px 0; /* Espaçamento interno do cabeçalho */
+  border-radius: 5px;
+  margin-top: 1px;
 }
 
 .content {
@@ -160,6 +162,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 button:hover {
