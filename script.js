@@ -76,7 +76,7 @@ let mercadorias = {
     'Leite em Pó': 0,
     'Filé de Peito de Frango': 0,
     'Carne': 0,
-    'CartelaOvos': 0
+    'Cartela de Ovos': 0
     
 };
 
