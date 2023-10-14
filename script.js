@@ -82,7 +82,8 @@ let mercadorias = {
     'Maionese': 0,
     'Billy e Jack': 0,
     'Ketchup': 0,
-    'Sacola 25/35': 0
+    'Sacola 25/35': 0,
+    'Papel Higiênico': 0    
 
     
 };
