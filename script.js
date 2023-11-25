@@ -83,7 +83,11 @@ let mercadorias = {
     'Billy e Jack': 0,
     'Ketchup': 0,
     'Sacola 25/35': 0,
-    'Papel Higiênico': 0    
+    'Papel Higiênico': 0,
+    'Detergente': 0,
+    'Toalha de papel': 0,
+    'Bombril': 0,    
+    'Guardanapo': 0 
 
     
 };
